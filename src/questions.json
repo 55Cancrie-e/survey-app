@@ -1,0 +1,203 @@
+[
+    {
+        "id": "1",
+        "text": "What's your gender:",
+        "options": ["Female", "Male"],
+        "dynamicKey": "gender",
+        "theme": "light",
+        "screenType": "single-choice",
+        "next": {
+          "Female": "2",
+          "Male": "2"
+        }
+    },
+    {
+        "id": "2",
+        "text": "So we can get to know you better, tell us about your relationship status.",
+        "options": ["Single", "In a relationship"],
+        "screenType": "single-choice",
+        "theme": "light",
+        "next": {
+          "Single": "3",
+          "In a relationship": "11"
+        }
+    },
+    {
+        "id": "3",
+        "text": "Are you a single parent?",
+        "options": ["Yes", "No"],
+        "dynamicKey": "have children",
+        "theme": "light",
+        "screenType": "single-choice",
+        "next": {
+          "Yes": "4",
+          "No": "4"
+        }
+    },
+    {
+        "id": "4",
+        "text": "{Gender} {who have children (if have children)} need a slightly different approach to improve their relationship. Which statement best describes you?",
+        "options": ["I’m very unhappy with how things are going in my relationship", "I’m unhappy with parts of my relationship, but some things are working well", "I’m generally happy in my relationship"],
+        "theme": "light",
+        "screenType": "single-choice",
+        "next": {
+          "I’m very unhappy with how things are going in my relationship": "5",
+          "I’m unhappy with parts of my relationship, but some things are working well": "5",
+          "I’m generally happy in my relationship": "5"
+        }
+    },
+    {
+        "id": "5",
+        "text": "Do you tend to overthink?",
+        "options": ["Yes", "No"],
+        "theme": "light",
+        "nextInfo": "6",
+        "screenType": "single-choice",
+        "next": {
+            "Yes": "7",
+            "No": "8"
+          }
+    },
+    {
+        "id": "6",
+        "text": "So how does it work?",
+        "subText": "We analyze hundreds of data points to create your unique astrological blueprint. This is combined with AI to tailor-make your astrological insights, based on your answers. We’re going to change your relationship with astrology.",
+        "options": ["Next"],
+        "theme": "dark",
+        "screenType": "info",
+        "next": {}
+    },
+    {
+      "id": "7",
+      "text": "What is most important to you?",
+      "options": ["Success", "Romance", "Stability", "Freedom"],
+      "theme": "light",
+      "screenType": "single-choice",
+      "next": {
+          "Success": "9",
+          "Romance": "9",
+          "Stability": "9",
+          "Freedom": "9"
+        }
+    },
+    {
+      "id": "8",
+      "text": "Is emotional control tricky for you?",
+      "options": ["Yes", "Sometimes", "Rarely", "Not at all"],
+      "theme": "light",
+      "screenType": "single-choice",
+      "next": {
+          "Yes": "9",
+          "Sometimes": "9",
+          "Rarely": "9",
+          "Not at all": "9"
+        }
+    },
+    {
+      "id": "9",
+      "text": "Where did you hear about us?",
+      "options": ["Poster or Billboard", "Friend or Family", "Instagram", "Direct Mail or Package Insert", "Online TV or Streaming TV", "TV", "Radio", "Search Engine (Google, Bing, etc.)", "Newspaper or Magazine", "Facebook", "Blog Post or Website Review", "Podcast", "Influencer", "Youtube", "Pinterest", "Other"],
+      "theme": "light",
+      "screenType": "single-choice",
+      "next": {
+        "Poster or Billboard": "10",
+        "Friend or Family": "10",
+        "Instagram": "10",
+        "Direct Mail or Package Insert": "10",
+        "Online TV or Streaming TV": "10",
+        "TV": "10",
+        "Radio": "10",
+        "Search Engine (Google, Bing, etc.)": "10",
+        "Newspaper or Magazine": "10",
+        "Facebook": "10",
+        "Blog Post or Website Review": "10",
+        "Podcast": "10",
+        "Influencer": "10",
+        "Youtube": "10",
+        "Pinterest": "10",
+        "Other": "10"
+      }
+    },
+    {
+      "id": "10",
+      "text": "Result",
+      "theme": "light",
+      "screenType": "result",
+      "next": {}
+    },
+    {
+      "id": "11",
+      "text": "Are you a parent?",
+      "options": ["Yes", "No"],
+      "dynamicKey": "have children",
+      "theme": "light",
+      "screenType": "single-choice",
+      "next": {
+        "Yes": "12",
+        "No": "12"
+      }
+    },
+    {
+      "id": "12",
+      "text": "Single {gender} {who have children (if have children)} need a slightly different approach to find their perfect partner. But first, how did you feel in your last relationship?",
+      "options": ["I was unhappy with low things were going in my relationship", "I was unhappy with parts of my relationship, but some thing were working", "I was generally happy with my relationship", "I’ve never been in a relationship"],
+      "theme": "light",
+      "screenType": "single-choice",
+      "next": {
+        "I was unhappy with low things were going in my relationship": "13",
+        "I was unhappy with parts of my relationship, but some thing were working": "13",
+        "I was generally happy with my relationship": "13",
+        "I’ve never been in a relationship": "13"
+      }
+    },
+    {
+      "id": "13",
+      "text": "Is your partner an introvert or extrovert?",
+      "options": ["Introvert", "Extrovert", "A bit of both"],
+      "theme": "light",
+      "screenType": "single-choice",
+      "next": {
+        "Introvert": "14",
+        "Extrovert": "14",
+        "A bit of both": "14"
+      }
+    },
+    {
+      "id": "14",
+      "text": "What is your partner’s gender?",
+      "options": ["Male", "Female"],
+      "theme": "light",
+      "screenType": "single-choice",
+      "next": {
+          "Male": "15",
+          "Female": "15"
+        }
+    },
+    {
+      "id": "15",
+      "text": "Do you agree with the statement below?",
+      "subText": "“My partner and I make sex a priority in our relationship”",
+      "options": ["Strongly agree", "Agree", "Neutral", "Disagee", "Strongly disagree"],
+      "theme": "light",
+      "screenType": "single-choice",
+      "next": {
+          "Strongly agree": "16",
+          "Agree": "16",
+          "Neutral": "16",
+          "Disagee": "16",
+          "Strongly disagree": "16"
+        }
+    },
+    {
+      "id": "16",
+      "text": "When you think about your relationship goals, you feel...?",
+      "options": ["Optimistic! They are totally doable, with some guidance.", "Cautious. I’ve struggled before, but I’m hopeful.", "I’m feeling a little anxious, honestly."],
+      "theme": "light",
+      "screenType": "single-choice",
+      "next": {
+        "Optimistic! They are totally doable, with some guidance.": 9,
+        "Cautious. I’ve struggled before, but I’m hopeful.": 9,
+        "I’m feeling a little anxious, honestly.": 9
+      }
+    }
+]
